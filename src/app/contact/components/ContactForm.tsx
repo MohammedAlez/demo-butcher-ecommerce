@@ -35,7 +35,7 @@ export function ContactForm(){
             
             <button className='h-[40px] p-2 bg-[#890404] hover:opacity-90 text-white font-medium text-center w-full'>
                 
-                    'Envoyer Message'
+                    Envoyer Message
                 
             </button>
         </div>
