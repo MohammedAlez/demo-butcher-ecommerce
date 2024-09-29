@@ -46,7 +46,7 @@ export default function RelatedProducts({id}:{id:number}){
                     {[1,2,3,4].map((e)=>{
                         return (
                             <SwiperSlide key={e}>
-                                <ProductCard product={undefined} isFetching={isFetching}/>
+                                {/* <ProductCard product={undefined} isFetching={isFetching}/> */}
                             </SwiperSlide>
                         )
                     })}
