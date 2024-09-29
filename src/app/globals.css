@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.testimonials .swiper-wrapper{
+  width:0
+}
+.testimonials .swiper-pagination{
+  width: 100%;
+  padding-top: 36px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination-bullet-active{
+  background-color: rgb(36, 35, 35);
+}
+
+.home-slider .swiper-pagination,
+.packs .swiper-pagination,
+.hero .swiper-pagination,
+.categories .swiper-pagination,
+.best-seller .swiper-pagination{
+  display:none
+}
+
+/* customize side cart scroll */
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(231, 231, 231);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(204, 204, 204);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 177, 177);
+  
+}
+/* customize side bar cart scroll */
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    min-width: 40px;
+    height: 40px;
+    background: #890404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.7;
+    color: #b7b6b6;
+    font-weight: 600;
+    z-index: 9999;
+    background: white;
+    color: gray;
+    font-size: 16px !important;
+    min-width: 30px;
+    height: 30px;
+}
+
+/* .swiper-button-prev::after:hover,
+.swiper-button-next::after:hover{
+  opacity: 1;
+}
+
+
+.swiper-button-disabled{
+  background: gray;
+  opacity:0.5
+} */
+
+.detailed-desc img{
+  margin-inline:auto;
+  max-height:300px
+}
