@@ -2,7 +2,6 @@
 
 import ProductTabs from "./components/ProductTabs";
 
-import RelatedProducts from "./components/RelatedProducts";
 import { AddingOptions } from "./components/AddingOptions";
 import { useProduct } from "../../../../lib/api";
 import { ProductType } from "../../../../lib/types";
