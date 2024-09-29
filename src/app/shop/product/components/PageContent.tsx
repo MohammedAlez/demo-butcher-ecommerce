@@ -7,7 +7,6 @@ import { AddingOptions } from "./AddingOptions";
 import { Images } from "./Images";
 import LoadingFallBack from "./LoadingFallBack";
 import ProductTabs from "./ProductTabs";
-import RelatedProducts from "./RelatedProducts";
 import { useSearchParams } from "next/navigation";
 import { PRODUCTS_DATA } from "@/data";
 
