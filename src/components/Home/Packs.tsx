@@ -52,12 +52,12 @@ export default function Packs(){
                     className="mySwipper w-fitmx-auto"
                 >
                     {
-                      PRODUCTS_DATA?.map((product:Product,i)=>{
+                      PRODUCTS_DATA.filter(e=>e.isPack).map((product:Product,i)=>{
                           return (
                               <SwiperSlide key={product.id}>
                                   <div className={`group mx-auto lg:mx-0 flex my-8 overflow-hidden transition relative w-[220px] h-[350px] gap-2 items-end pt-8 ${i%2==0 && 'mt-16'}`}>
                                       <Image style={{transition:'0.3s'}} 
-                                      src={SERVER_URL + product.image} 
+                                      src={product.image} 
                                       alt='' fill className="group-hover:brightness-75 brightness-[0.4] group-hover:scale-105 transition z-[-1] object-cover absolute top-0 right-0"/>
                                       
                                       <div style={{transition:'0.3s'}} className="text-white p-4 flex flex-col gap-1 justify-start group-hover:mb-3 transition duration-500">
