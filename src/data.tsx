@@ -6,7 +6,7 @@ export const CATEGORIES_DATA = [
     },
     {
         id:2,
-        name:'Viande d’agneau',
+        name:'Viande de agneau',
         img:'/categories/beef 2.jpg',
     },
     {
